@@ -10,7 +10,7 @@ pipeline {
         stage('Read') {
             steps {
                 echo 'Read the file ...'
-                readFile 'README.md'
+                sh 'cat README.md'
             }
         }
     }
