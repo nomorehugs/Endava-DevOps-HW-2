@@ -1,0 +1,17 @@
+name: Endava-HW
+
+on: push
+
+jobs:
+  endava-homework:
+    name: Endava GitHub Actions
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Runs the Super-Linter action
+      - name: Read README.md
+        uses: actions/checkout@v2
+        run: cat README.md
